@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#21150d">
+<title>JK GURU JI</title>
+
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0;min-height:100vh;padding:14px 12px;
+  display:flex;align-items:center;justify-content:center;
+  font-family:Arial,sans-serif;color:#f7f4ef;
+  background:radial-gradient(ellipse at center,#3b2818,#21150d 70%,#120b06);
+}
+.card{
+  width:100%;max-width:400px;text-align:center;
+  padding:20px 18px 18px;border:1px solid #63451f;
+  border-radius:30px;
+  background:linear-gradient(145deg,#302116dd,#1d130de8);
+  box-shadow:0 0 22px #ffae0010;
+}
+.tag{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:8px 13px;border:1px solid #397a42;
+  border-radius:25px;background:#23402355;
+  font-size:13px;font-weight:bold;
+}
+.dot{
+  width:8px;height:8px;border-radius:50%;
+  background:#12b94b;box-shadow:0 0 9px #12b94b;
+}
+.logo-wrap{
+  width:96px;height:96px;padding:5px;margin:18px auto 15px;
+  border:5px solid #ffad00;border-radius:50%;
+  box-shadow:0 0 18px #ffad0040;
+  animation:float 3s ease-in-out infinite;
+}
+.logo{
+  width:100%;height:100%;border-radius:50%;
+  object-fit:cover;background:#302116;
+}
+h1{font-size:29px;line-height:1.2;margin:0 0 14px;font-weight:800}
+.subtitle{font-size:15px;line-height:1.45;margin:0 0 20px;color:#e3ded7}
+.expertise{font-size:19px;font-weight:800;letter-spacing:1px;color:#ffad00;margin:0 0 12px}
+.support{font-size:14px;line-height:1.4;color:#a9b0c0;margin:0 0 21px}
+.join{
+  min-height:54px;width:100%;padding:9px;
+  display:flex;align-items:center;justify-content:center;gap:11px;
+  border-radius:40px;text-decoration:none;
+  color:#1a1006;font-size:21px;font-weight:800;
+  background:linear-gradient(100deg,#ff9e00,#ffd000);
+  box-shadow:0 0 24px #ffae0040;
+  animation:float 2.6s ease-in-out infinite;
+}
+.tg{
+  width:33px;height:33px;display:flex;align-items:center;
+  justify-content:center;background:#1a1006;border-radius:50%;
+}
+.tg svg{width:20px;height:20px;fill:#ffb300}
+.countdown{font-size:14px;color:#aeb2bd;margin:19px 0 17px}
+.countdown strong{font-size:22px;color:#ffb000;margin:0 4px}
+.line{border-top:1px dashed #63451f;margin-bottom:16px}
+.disclaimer{font-size:12px;line-height:1.55;color:#aeb2bd;margin:0}
+.disclaimer b{color:#ddd8d1}
+@keyframes float{
+  0%,100%{transform:translateY(0)}
+  50%{transform:translateY(-4px)}
+}
+@media(max-width:360px){
+  .card{padding:17px 13px;border-radius:26px}
+  .logo-wrap{width:88px;height:88px}
+  h1{font-size:26px}
+  .join{min-height:51px;font-size:19px}
+}
+@media(prefers-reduced-motion:reduce){
+  .logo-wrap,.join{animation:none}
+}
+</style>
+</head>
+
+<body>
+<main class="card">
+
+  <div class="tag">
+    <span class="dot"></span>
+    <span>🏏 Cricket Updates &amp; Insights</span>
+  </div>
+
+  <div class="logo-wrap">
+    <img class="logo" src="logo.jpg" alt="JK GURU JI logo">
+  </div>
+
+  <h1>JK GURU JI</h1>
+
+  <p class="subtitle">
+    Honest analysis · Match insights · Community driven
+  </p>
+
+  <p class="expertise">✦ CRICKET INSIGHTS ✦</p>
+
+  <p class="support">
+    Stay informed with cricket updates and analysis
+  </p>
+
+  <a class="join" href="https://t.me/+AQocbelwlyRlMWFl">
+    <span class="tg">
+      <svg viewBox="0 0 24 24">
+        <path d="M21.7 3.3a1.5 1.5 0 0 0-1.6-.25L2.6 9.8c-1.2.48-1.15 2.2.08 2.6l4.4 1.45 1.65 5.15c.37 1.14 1.83 1.42 2.6.5l2.52-3.02 4.36 3.2c.97.72 2.36.2 2.62-.98l2.9-13.75a1.5 1.5 0 0 0-.43-1.65ZM9.1 13.1l8.6-5.3-6.7 6.7-.35 3.1-1.55-4.5Z"/>
+      </svg>
+    </span>
+    <span>Subscribe Free</span>
+  </a>
+
+  <p class="countdown">
+    Redirecting in <strong id="seconds">10</strong> seconds...
+  </p>
+
+  <div class="line"></div>
+
+  <p class="disclaimer">
+    <b>Disclaimer:</b> Cricket updates &amp; analysis only.
+    No betting or gambling promoted. Verify independently.
+  </p>
+
+</main>
+
+<script>
+(function(){
+  let seconds = 10;
+  const display = document.getElementById("seconds");
+  const telegramLink = "https://t.me/+AQocbelwlyRlMWFl";
+
+  const timer = setInterval(function(){
+    seconds--;
+    display.textContent = seconds;
+
+    if(seconds <= 0){
+      clearInterval(timer);
+      window.location.href = telegramLink;
+    }
+  }, 1000);
+})();
+</script>
+
+</body>
+</html>
